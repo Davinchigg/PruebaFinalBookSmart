@@ -1,4 +1,4 @@
-
+// Clase que gestiona el catálogo y los préstamos de libros, ta potente
 
 object GestorPrestamos {
 
@@ -8,6 +8,8 @@ object GestorPrestamos {
         LibroDigital("Programación en Kotlin", "JetBrains", 9990.0, 10, drm = true),
         LibroDigital("Algoritmos Básicos", "Cormen", 11990.0, 10, drm = false)
     )
+
+
 
     fun mostrarCatalogo(catalogo: List<Libro>) {
         println("----- Catálogo BookSmart -----")
@@ -49,3 +51,4 @@ object GestorPrestamos {
         return EstadoPrestamo.EnPrestamo
     }
 }
+//ojalá funcione xD

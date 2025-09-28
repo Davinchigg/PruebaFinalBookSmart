@@ -1,3 +1,4 @@
+//esta seria la clase base, empecé de acá a hacer las otras clases que heredan de esta
 open class Libro(
     val titulo: String,
     val autor: String,

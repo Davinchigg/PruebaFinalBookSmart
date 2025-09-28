@@ -1,3 +1,4 @@
+// Clase que representa un libro digital y también hereda de libro
 class LibroDigital(
     titulo: String,
     autor: String,

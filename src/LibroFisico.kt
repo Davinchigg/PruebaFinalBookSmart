@@ -1,3 +1,4 @@
+//Clase que representa un libro fisico y hereda de libro
 class LibroFisico(
     titulo: String,
     autor: String,

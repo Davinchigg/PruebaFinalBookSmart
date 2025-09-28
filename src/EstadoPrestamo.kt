@@ -1,3 +1,4 @@
+// Clase sellada que define los posibles estados de un préstamo
 sealed class EstadoPrestamo {
     object Pendiente : EstadoPrestamo()
     object EnPrestamo : EstadoPrestamo()

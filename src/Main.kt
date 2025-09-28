@@ -1,9 +1,10 @@
+//main hacer código y validar
 fun main() {
     println("📚 Bienvenido a BookSmart 📚")
     val catalogo = GestorPrestamos.inicializarCatalogo()
     GestorPrestamos.mostrarCatalogo(catalogo)
 
-    println("Seleccione los libros que desea prestar (ejemplo: 1,3):")
+    println("Seleccione los libros para préstamo (ejemplo: 1,3):")
     val indicesSeleccionados = readln().split(",").mapNotNull {
         it.trim().toIntOrNull()?.minus(1)
     }
@@ -24,7 +25,7 @@ fun main() {
     val diasRetraso = readln().toIntOrNull() ?: 0
 
     val estado = GestorPrestamos.procesarPrestamoAsync(seleccion)
-
+//aqui creo que se puede definir el val estado dentro de when pero no quise tocar mucho porque me daba errores xD
     when (estado) {
         is EstadoPrestamo.EnPrestamo -> {
             val subtotal = GestorPrestamos.calcularSubtotal(seleccion)
